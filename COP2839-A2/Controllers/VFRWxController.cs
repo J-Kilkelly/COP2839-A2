@@ -12,7 +12,6 @@ namespace COP2839_A2.Controllers
 			_vfrwxservice = vfrwxservice;
 		}
 
-
 		[HttpGet]
 		public IActionResult CheckVFR
 			(
@@ -30,7 +29,7 @@ namespace COP2839_A2.Controllers
 				visibility
 				);
 
-			return View(isVFR);
+			return View();
 		}
 	}
 }
