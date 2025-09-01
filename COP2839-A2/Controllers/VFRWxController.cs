@@ -30,14 +30,6 @@ namespace COP2839_A2.Controllers
 				visibility
 				);
 
-			var model = new VFRWxInputModel
-			{
-				BelowClouds = belowClouds,
-				AboveClouds = aboveClouds,
-				HorizontalCloudSeparation = horizontalCloudSeparation,
-				Visibility = visibility,
-				IsVFR = isVFR
-			};
 			return View(isVFR);
 		}
 	}
