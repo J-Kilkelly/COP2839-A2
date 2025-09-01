@@ -9,6 +9,7 @@ If the above conditions cannot be met, you may not fly following visual flight r
 
 Dependency Injection
 I think my service implementation is complete and registered correctly. In the Services folder, I have an interface that is applied to a public class, VFRWxService.
+
 Separation of Concerns
 As my program grew in size and complexity, I really saw the benefit of separation of concerns. I was getting lost trying to find previously written code and, as I wrote new code, I spent more time thinking about where to put it. I also started putting more thought into choosing good, descriptive names. 
 
