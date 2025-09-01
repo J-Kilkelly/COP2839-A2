@@ -1,0 +1,28 @@
+﻿@model VFRWxInputModel
+
+@{
+    ViewData["Title"] = "Clearance Input Form";
+}
+
+<h2>Enter cloud clearance in feet and visibility in statue miles.</h2>
+
+<form asp-controller="VFRWx" asp-action="CheckVFR" method="get">
+    <div>
+        <label for="belowClouds">Below Clouds:</label>
+        <input type="number" id="belowClouds" name="belowClouds" required />
+    </div>
+    <div>
+        <label for="aboveClouds">Above Clouds:</label>
+        <input type="number" id="aboveClouds" name="aboveClouds" required />
+    </div>
+    <div>
+        <label for="horizontalCloudSeparation">Horizontal Cloud Separation:</label>
+        <input type="number" id="horizontalCloudSeparation" name="horizontalCloudSeparation" required />
+    </div>
+    <div>
+        <label for="visibility">Visibility:</label>
+        <input type="number" id="visibility" name="visibility" required />
+    </div>
+    <button type="submit">Submit</button>
+</form>
+

@@ -1,0 +1,16 @@
+﻿@model bool //tells Razor to expect a boolean from the controller
+@{
+    ViewData["Title"] = "VFR Weather Minimums";
+}
+
+<div class="text-center">
+    <h1 class="display-4">VFR Minimums Met?</h1>
+        @if (Model)
+        {
+        <p>"VFR conditions are met."</p>
+        }
+        else
+        {
+        <p>"VFR conditions are NOT met."</p>
+        }
+</div>
