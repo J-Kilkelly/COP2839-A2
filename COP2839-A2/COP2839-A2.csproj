@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BusinessLogic\" />
-    <Folder Include="UserInterface\" />
+    <Folder Include="Features\Home\" />
+    <Folder Include="Features\Weather\" />
   </ItemGroup>
 
 </Project>
