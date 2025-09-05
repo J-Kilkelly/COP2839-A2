@@ -2,12 +2,12 @@
 {
 	public class VFRWxService : Interfaces.IVFRWxService
 	{
-		public bool IsVFR(int belowClouds, int aboveClouds, int horizontalCloudSeparation, int visibility)
+		public bool IsVFR(int BelowClouds, int AboveClouds, int HorizontalCloudSeparation, int Visibility)
 		{
-			if (belowClouds < 500) return false;
-			if (aboveClouds < 1000) return false;
-			if (horizontalCloudSeparation < 2000) return false;
-			if (visibility < 3) return false;
+			if (BelowClouds < 500) return false;
+			if (AboveClouds < 1000) return false;
+			if (HorizontalCloudSeparation < 2000) return false;
+			if (Visibility < 3) return false;
 			return true;
 		}
 	}

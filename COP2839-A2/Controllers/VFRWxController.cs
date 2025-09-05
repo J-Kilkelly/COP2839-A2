@@ -13,23 +13,16 @@ namespace COP2839_A2.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult CheckVFR
-			(
-			int belowClouds,
-			int aboveClouds,
-			int horizontalCloudSeparation,
-			int visibility
-			)
+		public IActionResult CheckVFR(VFRWxInputModel model)
 		{
 			bool isVFR = _vfrwxservice.IsVFR
 				(
-				belowClouds,
-				aboveClouds,
-				horizontalCloudSeparation,
-				visibility
+				model.BelowClouds,
+				model.AboveClouds,
+				model.HorizontalCloudSeparation,
+				model.Visibility
 				);
-
-			return View();
+				return View(isVFR);
 		}
 	}
 }
