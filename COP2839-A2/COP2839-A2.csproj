@@ -7,4 +7,9 @@
     <RootNamespace>COP2839_A2</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="UserInterface\" />
+  </ItemGroup>
+
 </Project>
