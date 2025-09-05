@@ -1,7 +1,7 @@
-﻿using COP2839_A2.Interfaces;
-using COP2839_A2.Models;
+﻿using COP2839_A2.Features.UserInput;
+using COP2839_A2.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-namespace COP2839_A2.Controllers
+namespace COP2839_A2.Features.Weather
 {
 	public class VFRWxController : Controller
 	{

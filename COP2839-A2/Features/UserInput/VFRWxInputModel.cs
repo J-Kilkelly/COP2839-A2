@@ -1,4 +1,4 @@
-﻿namespace COP2839_A2.Models
+﻿namespace COP2839_A2.Features.UserInput
 {
 	public class VFRWxInputModel
 	{

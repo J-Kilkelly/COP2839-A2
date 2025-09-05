@@ -1,11 +1,13 @@
 
+using COP2839_A2.Features.Weather;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 // Register VFRWxService; when IVFRWxService is requested, VFRWxService is returned
-builder.Services.AddScoped<COP2839_A2.Interfaces.IVFRWxService, COP2839_A2.Services.VFRWxService>();
+builder.Services.AddScoped<COP2839_A2.Interfaces.IVFRWxService, VFRWxService>();
 
 var app = builder.Build();
 

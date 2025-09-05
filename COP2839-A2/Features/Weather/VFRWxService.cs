@@ -1,4 +1,4 @@
-﻿namespace COP2839_A2.Services
+﻿namespace COP2839_A2.Features.Weather
 {
 	public class VFRWxService : Interfaces.IVFRWxService
 	{

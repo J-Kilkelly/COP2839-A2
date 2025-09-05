@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Home\" />
-    <Folder Include="Features\Weather\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

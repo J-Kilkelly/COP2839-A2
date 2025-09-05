@@ -2,7 +2,7 @@ using System.Diagnostics;
 using COP2839_A2.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace COP2839_A2.Controllers
+namespace COP2839_A2.Features.Home
 {
     public class HomeController : Controller
     {
@@ -15,7 +15,8 @@ namespace COP2839_A2.Controllers
 
         public IActionResult Index()
         {
-            return View();
+			//identifies where to find the default view
+			return View("~/Features/Home/Index.cshtml"); 
         }
 
         public IActionResult Privacy()
