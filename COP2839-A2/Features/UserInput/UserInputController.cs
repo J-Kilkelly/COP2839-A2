@@ -2,14 +2,13 @@
 
 namespace COP2839_A2.Features.UserInput
 {
+	[Route("UserInput")]
 	public class UserInputController : Controller
 	{
-		public IActionResult UserInput;
-		
-		
+		[HttpGet("InputForm")]
 		public IActionResult InputForm()
 		{
-			return View();
+			return View("~/Features/UserInput/InputForm.cshtml");
 		}
 	}
 }

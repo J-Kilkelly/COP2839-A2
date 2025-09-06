@@ -6,6 +6,5 @@
 		public int AboveClouds { get; set; }
 		public int HorizontalCloudSeparation { get; set; }
 		public int Visibility { get; set; }
-		//public bool IsVFR { get; set; }
 	}
 }

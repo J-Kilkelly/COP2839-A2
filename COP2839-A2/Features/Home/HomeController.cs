@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace COP2839_A2.Features.Home
 {
-    public class HomeController : Controller
+	
+	public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -13,15 +14,17 @@ namespace COP2839_A2.Features.Home
             _logger = logger;
         }
 
-        public IActionResult Index()
+		[HttpGet("")]
+		[HttpGet("Index")]
+		public IActionResult Index()
         {
-			//identifies where to find the default view
-			return View("~/Features/Home/Index.cshtml"); 
+			return View(); 
         }
 
-        public IActionResult Privacy()
+        [HttpGet("Privacy")]
+		public IActionResult Privacy()
         {
-            return View();
+            return View("~/Features/Home/Privacy.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
